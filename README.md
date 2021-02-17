@@ -5,7 +5,7 @@ Our application will provide the users, the option to drag and drop augmented fu
 
 **Developers:**
 
-1. [Mehedi Hasan Sub](https://github.com/mh-sun) (BSSE 1025)
+1. [Mehedi Hasan Sun](https://github.com/mh-sun) (BSSE 1025)
 2. [Abdullah-Al-Jahid](https://github.com/Jahid1999) (BSSE 1030)
 
 **Features:**
