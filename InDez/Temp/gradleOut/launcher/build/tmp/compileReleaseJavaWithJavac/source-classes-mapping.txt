@@ -1,2 +1,0 @@
-com/MyCompany/Indez11_02/BuildConfig.java
- com.MyCompany.Indez11_02.BuildConfig

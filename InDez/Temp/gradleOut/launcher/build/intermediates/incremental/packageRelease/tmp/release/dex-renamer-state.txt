@@ -1,4 +1,0 @@
-#Wed Feb 17 01:31:04 BDT 2021
-base.0=/home/abdullah-al-jahid/Desktop/Indez11_02 - Copy (2)/Temp/gradleOut/launcher/build/intermediates/dex/release/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
