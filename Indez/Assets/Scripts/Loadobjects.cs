@@ -5,20 +5,24 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Loadobjects : MonoBehaviour
+public class Loadobjects
 {
     Data userData;
 
-    public void loadData()
+    public Data loadData()
     {
         userData = new Data();
         string jsonData = ReadFromFile(SaveObjects.file);
         if(jsonData == null)
         {
             Debug.LogWarning("File not found");
-            return;
+            return null;
         }
-        else JsonUtility.FromJsonOverwrite(jsonData, userData);
+        else
+        {
+            JsonUtility.FromJsonOverwrite(jsonData, userData);
+            return userData;
+        }
     }
 
     private string ReadFromFile(string file)
@@ -30,7 +34,6 @@ public class Loadobjects : MonoBehaviour
             using (StreamReader streamReader = new StreamReader(path))
             {
                 string jsonData = streamReader.ReadToEnd();
-                Debug.Log(jsonData);
                 return jsonData;
             }
         }
