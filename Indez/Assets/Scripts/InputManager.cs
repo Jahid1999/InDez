@@ -7,6 +7,7 @@ using UnityEngine.Experimental.XR;
 using System;
 using UnityEngine.XR.ARSubsystems;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class InputManager : MonoBehaviour
 {
@@ -84,4 +85,12 @@ public class InputManager : MonoBehaviour
         return raycastResults.Count > 0;
     }
 
+    public void Back()
+    {
+        SceneManager.LoadScene("Choose");
+    }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
